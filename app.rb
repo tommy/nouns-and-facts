@@ -14,7 +14,7 @@ __END__
 %html
   %head
     %title
-      r
+      nouns and facts
     <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
     %link{:href=>"style.css",:rel=>"stylesheet",:type=>"text/css"}
   %body
