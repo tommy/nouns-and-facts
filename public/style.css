@@ -1,23 +1,17 @@
-/*#text {
-  text-align:center;
-  width:50%;
-  margin:auto;
-}
-
-#comic {
-  text-align:center;
-}
-
-*/
-
 body {
   background-color:#f3f3f3;
   font-family:georgia;
   text-align:center;
 }
 
-#header {
-  margin:1em 0;
+h4 a {
+  color: black;
+}
+
+#content {
+  padding: 4em 0;
+  max-width: 50em;
+  margin: 0 auto;
 }
 
 #sidebar {
@@ -43,16 +37,3 @@ h1,h3 {
   font-weight:normal;
   margin:0;
 }
-
-h3 {
-  font-size:smaller;
-}
-
-#thumbs_up {
-  background-image:thumb.gif;
-}
-
-/*
-#comic img {
-  border:1px solid #ccc;
-}*/

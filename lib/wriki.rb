@@ -13,9 +13,13 @@ end
 
 class Page
   attr_accessor :doc
+  attr_accessor :url
 
   def initialize(url)
-    @doc = Nokogiri::HTML(open(url, "User-Agent" => "Ruby/#{RUBY_VERSION}"))
+    open(url, "User-Agent" => "Ruby/#{RUBY_VERSION}") do |resp|
+      @doc = Nokogiri::HTML(resp)
+      @url = resp.base_uri
+    end
   end
 
   def plaintext
@@ -42,8 +46,8 @@ module NLP
 end
 
 module App
-  def self.random_sentence_with_title
+  def self.random_sentence_with_title_and_url
     page = Page.new(Wikipedia.random_url)
-    return NLP.split_sentences(page.plaintext).sample, page.title
+    return NLP.split_sentences(page.plaintext).sample, page.title, page.url
   end
 end

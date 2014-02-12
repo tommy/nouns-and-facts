@@ -4,7 +4,7 @@ require 'haml'
 require_relative 'lib/wriki'
 
 get '/' do
-  @sentence, @wiki_title = App.random_sentence_with_title
+  @sentence, @wiki_title, @article_url = App.random_sentence_with_title_and_url
   haml :index
 end
 
@@ -26,7 +26,9 @@ __END__
 
 
 @@index
-%h1
-  = @sentence
-%h4
-  = @wiki_title
+#content
+  %h1
+    = @sentence
+  %h4
+    %a{:href => @article_url}
+      = @wiki_title
