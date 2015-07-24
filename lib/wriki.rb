@@ -3,7 +3,7 @@ require 'open-uri'
 
 module Wikipedia
   def self.random_url(sub="en")
-    "http://#{sub}.wikipedia.org/wiki/Special:Random"
+    "https://#{sub}.wikipedia.org/wiki/Special:Random"
   end
 
   def self.article_url(name, sub="en")
