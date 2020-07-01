@@ -1,24 +1,26 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    haml (5.0.4)
+    haml (5.1.2)
       temple (>= 0.8.0)
       tilt
     mini_portile2 (2.4.0)
-    mustermann (1.0.2)
-    nokogiri (1.10.4)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
-    rack (2.0.5)
-    rack-protection (2.0.2)
+    rack (2.2.3)
+    rack-protection (2.0.8.1)
       rack
-    rake (12.3.1)
-    sinatra (2.0.2)
+    rake (13.0.1)
+    ruby2_keywords (0.0.2)
+    sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.2)
+      rack-protection (= 2.0.8.1)
       tilt (~> 2.0)
-    temple (0.8.0)
-    tilt (2.0.8)
+    temple (0.8.2)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
@@ -30,7 +32,7 @@ DEPENDENCIES
   sinatra
 
 RUBY VERSION
-   ruby 2.5.1p57
+   ruby 2.7.0p0
 
 BUNDLED WITH
-   1.16.2
+   2.1.4
