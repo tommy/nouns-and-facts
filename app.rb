@@ -23,7 +23,14 @@ __END__
     %link{:href=>"style.css",:rel=>"stylesheet",:type=>"text/css"}
   %body
     = yield
+    = haml :sidebar, :layout=>false
 
+@@sidebar
+#sidebar<
+  %ul
+    %li
+      created by
+      %a{:href=>'http://twitter.com/papungha'} tommy
 
 @@index
 #content
